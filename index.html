@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Currículo – Luigi Neto Figueiredo</title>
+    <meta name="description" content="Currículo moderno responsivo em HTML/CSS/JS com dark mode e botão de impressão" />
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+
+</head>
+<body>
+  <div class="container">
+    <!-- Toolbar (não imprime) -->
+    <div class="toolbar" aria-label="Ações do currículo">
+      <button class="btn" id="themeBtn" title="Alternar tema">🌗 Tema</button>
+      <button class="btn" id="printBtn" title="Imprimir / Salvar em PDF">🖨️ Imprimir</button>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="avatar" aria-hidden="true" id="avatarBox">LN</div>
+      <div class="title">
+        <h1 id="name">Luigi Neto Figueiredo</h1>
+        <div class="role" id="headline">Desenvolvedor(a) Full Stack • Python • JavaScript • RPA • SQL</div>
+        <div class="links" role="list">
+          <a class="link" href="mailto:voce@email.com">✉️ Email</a>
+          <a class="link" href="https://www.linkedin.com/" target="_blank" rel="noreferrer noopener">🔗 LinkedIn</a>
+          <a class="link" href="https://github.com/" target="_blank" rel="noreferrer noopener">💻 GitHub</a>
+          <span class="link" aria-label="Localização">📍 Sua Cidade, Estado</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="grid" id="cvRoot">
+      <!-- Coluna esquerda -->
+      <section class="card">
+        <h2>Sobre</h2>
+        <p id="about">
+          Profissional com foco em desenvolvimento web e automação (RPA), experiência em criação de APIs, bots com Selenium, integrações com bancos de dados e boas práticas de versionamento, testes e observabilidade. Apaixonado(a) por entregar valor rápido e com qualidade.
+        </p>
+      </section>
+
+      <aside class="card">
+        <h2>Habilidades</h2>
+        <div class="chips" id="skillsChips">
+          <span class="chip">Python</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">React</span>
+          <span class="chip">SQL</span>
+          <span class="chip">FastAPI</span>
+          <span class="chip">Selenium</span>
+          <span class="chip">Docker</span>
+          <span class="chip">Git</span>
+        </div>
+        <div style="margin-top:12px; display:grid; gap:10px">
+          <div class="skill"><div>Python</div><div class="bar"><i style="--val: 94%"></i></div></div>
+          <div class="skill"><div>JavaScript</div><div class="bar"><i style="--val: 80%"></i></div></div>
+          <div class="skill"><div>SQL</div><div class="bar"><i style="--val: 90%"></i></div></div>
+        </div>
+      </aside>
+
+      <section class="card">
+        <h2>Experiência</h2>
+        <article class="item">
+          <div class="top">
+            <div class="title">Desenvolvedor(a) Full Stack – Grupo Crowe Macro</div>
+            <div class="meta">Fev/2025 — Atual • Híbrido</div>
+          </div>
+          <ul>
+            <li>Liderança de times de desenvolvimento</li>
+            <li>Liderança de automações com Selenium e integrações REST (FastAPI) consumidas por times internos.</li>
+            <li>Criação de pipelines de dados (pandas/SQL) e dashboards com foco em indicadores de negócio.</li>
+            <li>Práticas de logs/monitoramento e testes automatizados para reduzir MTTR e incidentes.</li>
+          </ul>
+          <div class="chips"><span class="chip">Python</span><span class="chip">FastAPI</span><span class="chip">Selenium</span><span class="chip">MySQL</span></div>
+        </article>
+        <article class="item">
+          <div class="top">
+            <div class="title">Desenvolvedor(a) RPA – TreeInova</div>
+            <div class="meta">Nov/2023 — Fev/2025 • Híbrido</div>
+          </div>
+          <ul>
+            <li>Práticas de logs/monitoramento e testes automatizados para reduzir MTTR e incidentes.</li>
+            <li>Liderança de automações com Selenium e integrações REST (FastAPI) consumidas por times internos.</li>
+          </ul>
+          <div class="chips"><span class="chip">React</span><span class="chip">Node.js</span><span class="chip">PostgreSQL</span></div>
+        </article>
+      </section>
+
+      <aside class="card">
+        <h2>Contato</h2>
+        <div class="item">
+          <div>Email</div>
+          <a href="mailto:luigi4274@gmail.com">luigi4274@gmail.com</a>
+        </div>
+        <div class="item">
+          <div>LinkedIn</div>
+          <a href="https://www.linkedin.com/in/luiginetoo/" target="_blank" rel="noreferrer noopener">linkedin.com/in/luiginetoo</a>
+        </div>
+        <div class="item">
+          <div>GitHub</div>
+          <a href="https://github.com/LuigiNeto01/" target="_blank" rel="noreferrer noopener">github.com/LuigiNeto01</a>
+        </div>
+      </aside>
+
+      <section class="card">
+        <h2>Projetos</h2>
+        <article class="item">
+          <div class="top">
+            <div class="title">Automação de Coleta Jurídica</div>
+            <div class="meta">2024</div>
+          </div>
+          <p>Bot com Selenium para coleta de dados em portais públicos, com resolução de captcha via serviço externo e persistência em banco.</p>
+          <div class="chips"><span class="chip">Selenium</span><span class="chip">Python</span><span class="chip">MySQL</span></div>
+        </article>
+        <article class="item">
+          <div class="top">
+            <div class="title">Dashboard Financeiro</div>
+            <div class="meta">2023</div>
+          </div>
+          <p>Pipeline ETL em Python + visualizações para indicadores de auditoria e balancetes.</p>
+          <div class="chips"><span class="chip">pandas</span><span class="chip">SQL</span></div>
+        </article>
+      </section>
+
+      <aside class="card">
+        <h2>Educação</h2>
+        <div class="item">
+          <div class="top"><div class="title">Análise e Desenvolvimento de Sistemas – UNIP</div><div class="meta">Cursando</div></div>
+          <p>Ênfase em desenvolvimento de software, bancos de dados e engenharia de requisitos.</p>
+        </div>
+        <div class="item">
+          <div class="top"><div class="title">Cursos e Certificações</div><div class="meta">Continuado</div></div>
+          <ul>
+            <li>Advanced React (Meta)</li>
+            <li>Docker & Kubernetes (Udemy)</li>
+            <li>Node.js & Express (IBM)</li>
+            <li>TOEIC - Score 820</li>
+          </ul>
+        </div>
+      </aside>
+
+      <section class="card">
+        <h2>Idiomas</h2>
+        <div class="item"><strong>Português</strong> — Nativo</div>
+        <div class="item"><strong>Inglês</strong> — Intermediário/Avançado</div>
+        <div class="item"><strong>Espanhol</strong> — Básico</div>
+      </section>
+
+  </div>
+
+
+</body>
+</html>
